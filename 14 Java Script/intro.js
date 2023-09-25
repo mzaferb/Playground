@@ -22,3 +22,38 @@ alert("Hello, " + nameCorrect + " !");
 var dogAge = prompt("Please write your dog's age below.");
 alert("Your dog is " + ((dogAge-2)*4+21) + " human years old.");
 
+//Stanford Karel (https://stanford.edu/~cpiech/karel/ide.html) 5x5 Chess Board
+function main(){
+    go1();
+    move();
+    turnLeft();
+    go2();
+    turnRight();
+    go1();
+    move();
+    turnLeft();
+    go2();
+    turnRight();
+    go1();
+ }
+ 
+ function go1(){
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    turnLeft();
+ }
+ function go2(){
+    move();
+    putBeeper();
+    move();
+    move();
+    putBeeper();
+    move();
+    turnRight();
+    move();
+ }
