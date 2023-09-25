@@ -13,7 +13,7 @@ alert(message + " there, this is " + name + ".")
 var tweet =prompt("Write your 140 characters tweet below");
 alert("You have written " + (tweet.length) + " characters, you have " + (140-tweet.length) + " characters left.")
 
-//slice lenght upper lower
+//slice length upper lower
 var name = prompt("Please write your name below");
 var nameCorrect = name.slice(0,1).toUpperCase() + name.slice(1,name.length).toLowerCase();
 alert("Hello, " + nameCorrect + " !");
