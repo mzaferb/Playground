@@ -57,3 +57,17 @@ function main(){
     turnRight();
     move();
  }
+
+ //Create function
+ function getMilkRobot(money, price) {
+    console.log("go to supermarket")
+    var bottle = Math.floor (money/price)
+    console.log("buy " + bottle + " bottles of milk")
+    console.log("pay $" + bottle*price + " to supermarket")
+    console.log("turn back to house")
+}
+getMilk(5, 1.5);
+    /*go to supermarket
+    buy 3 bottles of milk
+    pay $4.5 to supermarket
+    turn back to house*/
