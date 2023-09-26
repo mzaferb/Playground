@@ -74,3 +74,11 @@ console.log("Here is your $"+change+" change master.");
     Pay $4.5 to supermarket
     Turn back to house
     Here is your $0.5 change master.*/
+
+ //Body Mass Index Calculator
+ function bmiCalculator(weight, height) {
+    var bmi = Math.round(weight/Math.pow(height, 2))
+    return (bmi)
+}
+bmiCalculator(87, 1.83)
+    /*20*/
