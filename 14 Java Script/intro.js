@@ -101,3 +101,24 @@ function bmiCalc(weight,height) {
     return result;
 }
 bmiCalc(82,1.83);
+    /*Your BMI is 24, so you have a normal weight.*/
+
+//Leap Year Function
+function leapYear(year) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                return "Leap year.";
+            } else {
+                return "Not leap year.";
+            }
+        } else {
+            return "Leap year.";
+        }
+    } else {
+        return "Not leap year.";
+    }
+
+}
+leapYear(2096);
+    /*Leap year.*/
