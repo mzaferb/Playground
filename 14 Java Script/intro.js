@@ -134,24 +134,45 @@ if (guestList.includes (guest)) {
 
 //Arrays Fizzbuzz
 var output = [];
-var number = 1;
+var i = 1;
 
 function fizzbuzz() {
-    if (number % 3 === 0 && number % 5 === 0) {
+    while (i <= 100) {
+    if (i % 3 === 0 && i % 5 === 0) {
         output.push ("fizzbuzz");
-    }
-    else if (number % 3 === 0) {
+    } else if (i % 3 === 0) {
         output.push ("fizz");
-    }
-    else if (number % 5 === 0) {
+    } else if (i % 5 === 0) {
         output.push ("buzz");
+    } else {
+        output.push (i);
     }
-    else {
-        output.push (number);
+    i++;
     }
     console.log (output);
-    number++;
 }
+fizzbuzz(); //Many times
+
+//Arrays Fizzbuzz (while and if)
+var j = [];
+var i = 1;
+
+function fizzbuzz() {
+    while (i <= 100) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            j.push ("fizzbuzz");
+        } else if (i % 3 === 0) {
+            j.push ("fizz");
+        } else if (i % 5 === 0) {
+            j.push ("buzz");
+        } else {
+            j.push (i);
+        }
+        i++;
+    }
+    console.log (j);
+}
+fizzbuzz(); //One time
 
 //Who is Paying (Random)
 function whosPaying() {
