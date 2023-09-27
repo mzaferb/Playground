@@ -156,7 +156,7 @@ function fizzbuzz() {
 //Who is Paying (Random)
 function whosPaying() {
     var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
-    var number = Math.floor (Math.random()*5);
+    var number = Math.floor (Math.random() * names.length);
     return names[number]+" is going to buy lunch today!"
 }
 whosPaying()
