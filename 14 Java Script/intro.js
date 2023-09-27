@@ -131,3 +131,24 @@ if (guestList.includes (guest)) {
 } else {
     alert("Maybe next time "+ guest);
 }
+
+//Arrays Fizzbuzz
+var output = [];
+var number = 1;
+
+function fizzbuzz() {
+    if (number % 3 === 0 && number % 5 === 0) {
+        output.push ("fizzbuzz");
+    }
+    else if (number % 3 === 0) {
+        output.push ("fizz");
+    }
+    else if (number % 5 === 0) {
+        output.push ("buzz");
+    }
+    else {
+        output.push (number);
+    }
+    console.log (output);
+    number++;
+}
