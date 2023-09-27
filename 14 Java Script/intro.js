@@ -118,7 +118,16 @@ function leapYear(year) {
     } else {
         return "Not leap year.";
     }
-
 }
 leapYear(2096);
     /*Leap year.*/
+
+//Arrays
+var guestList = ["Angela", "Jack", "Pam", "James", "Lara", "Jason"];
+
+var guest = prompt("Write your name");
+if (guestList.includes (guest)) {
+    alert("Welcome "+guest);
+} else {
+    alert("Maybe next time "+ guest);
+}
