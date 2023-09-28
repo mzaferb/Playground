@@ -202,3 +202,23 @@ function whosPaying() {
 whosPaying()
     /*Ben is going to buy lunch today!*/
 
+//Fibonacci function array if for
+function fibonacci(n) {
+    var fibo = [];
+    
+    if (n === 1) {
+        fibo.push(0);
+    }
+    if (n === 2) {
+        fibo.push(0, 1);
+    }
+    if (n>2) {
+        fibo.push (0, 1);
+        for (var i=3; i<=n; i++) {
+            fibo.push(fibo[(i-3)]+fibo[(i-2)])
+        }
+    }
+    return fibo;
+}
+fibonacci(15);
+    /*(15) [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377]*/
