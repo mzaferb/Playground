@@ -174,6 +174,25 @@ function fizzbuzz() {
 }
 fizzbuzz(); //One time
 
+//Arrays Fizzbuzz (for and if)
+var j = [];
+
+function fizzbuzz() {
+    for (var i = 1; i <= 100; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            j.push ("fizzbuzz");
+        } else if (i % 3 === 0) {
+            j.push ("fizz");
+        } else if (i % 5 === 0) {
+            j.push ("buzz");
+        } else {
+            j.push (i);
+        }
+    }
+    console.log (j);
+}
+fizzbuzz(); //One time
+
 //Who is Paying (Random)
 function whosPaying() {
     var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
@@ -182,3 +201,4 @@ function whosPaying() {
 }
 whosPaying()
     /*Ben is going to buy lunch today!*/
+
