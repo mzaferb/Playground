@@ -3,13 +3,15 @@
   
   while (i < numberOfButtons) {
       document.querySelectorAll(".drum")[i].addEventListener("click", function() {
-        playSound(this.innerHTML);
+        playSound(this.innerHTML)
+        animation(this.innerHTML)
       });
       i++;
   }
 
   document.addEventListener("keydown", function(event) {
     playSound(event.key)
+    animation(event.key)
   });
 
   function playSound(letter) {
@@ -52,4 +54,11 @@
     
       default: console.log(letter);
     }
+  }
+
+  function animation(letter) {
+    var activeButton = document.querySelector("." + letter);
+    activeButton.classList.add("pressed")
+    setTimeout(function () {
+      activeButton.classList.remove("pressed")}, 100)
   }
