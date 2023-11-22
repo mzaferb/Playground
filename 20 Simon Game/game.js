@@ -58,7 +58,11 @@ $(document).keydown(function() {
 })
 
 function gameOver() {
-    $("#level-title").text("Game Over at Level " + level);
+    $("body").addClass("game-over");
+    setTimeout(function() {
+        $("body").removeClass("game-over")
+    }, 500);
+    $("#level-title").text("Game Over at Level " + (level-1));
     $(".btn").addClass("gameover");
     var audio = new Audio("sounds/wrong.mp3");
     audio.play();
